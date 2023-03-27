@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol {
+    font-weight: 300;
+    list-style-position: inside;
+}
+
+ul {
+    font-weight: 300;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+a {
+    font-size: 1.25em;
+    text-decoration: none;
+    float: right;
+}
+
+a:hover {
+        text-decoration: underline;
+}
+
+#left-div {
+    width: 45%;
+    float: left;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#right-div {
+    width: 45%;
+    float: right;
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+#last-div {
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
