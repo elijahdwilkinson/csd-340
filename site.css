@@ -1,0 +1,25 @@
+#container {
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: blue;
+    color: white;
+    border: 1px solid #D6a800;
+    padding: 10px;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: cyan;
+}
