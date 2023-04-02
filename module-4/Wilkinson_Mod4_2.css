@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    color: rgb(124, 12, 12);
+}
+
+h3{
+    text-align: center;
+}
+
+figure{
+    text-align: center;
+}
+
+figcaption{
+    font-style: italic;
+    font-size: .75em;
+}
+
+figure {
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+#image-gallery{
+    margin-top: 10%;
+}
+
+#landing-page {
+    width: 100%;
+    margin-top: 40%;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    border: 1px solid red;
+}
+
+a {
+    font-size: 1.25em;
+    text-decoration: none;
+    float: right;
+}
