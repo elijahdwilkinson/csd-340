@@ -1,0 +1,55 @@
+<!-- Elijah Wilkinson, 05/07/2023-->
+<!-- https://elijahdwilkinson.github.io/csd-340/ -->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+</br>
+
+<p>This is an interactive list. Please type an item into the text box and click "Add" to add the item to your list. You can also click "Delete Last Entry" to delete the most recent addition to list, as well as "Display" to show all of the items currently in your list.</p>
+
+<input type = "text" id = "userItem">
+
+<input type = "button" id = "addItem" value = "Add" onclick = "addToList();"></input>
+<input type = "button" id = "removeItem" value = "Delete Last Entry" onclick = "deleteFromList();"></input>
+<input type = "button" id = "displayItems" value = "Display" onclick = "displayFullList();"></input>
+
+<div id="displayList"></div>
+
+</body>
+
+<script>
+    var startingPoint = 1;
+    var userArray = Array();
+
+   function addToList() {
+    userArray[startingPoint] = document.getElementById('userItem').value;
+    alert("You have added " + userArray[startingPoint] + " to your list. It is item number " + startingPoint + ".");
+    startingPoint++;
+    document.getElementById('userItem').value = "";
+   }
+
+   function deleteFromList() {
+    userArray.pop();
+    alert ("You have removed the most recently added item from your list.");
+    startingPoint--;
+
+   }
+
+   function displayFullList() {
+    var j = "<hr/>";   
+    
+   for (var i=1; i<userArray.length; i++)
+   {
+     j += "Item " + i + ": " + userArray[i] + "<br/>";
+   }
+   document.getElementById("displayList").innerHTML = j;
+   }
+    </script>
+</html>
